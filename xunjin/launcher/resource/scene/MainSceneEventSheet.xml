@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="MainScene" previous="" next="" version="2.2">
+  <item type="instance" UID="19"/>
+  <item type="instance" UID="17">
+    <item initValue="" variableType="string" variableName="val" type="variable"/>
+  </item>
+  <item type="instance" UID="24"/>
+  <item type="instance" UID="22"/>
+  <item type="instance" UID="5">
+    <item initValue="false" variableType="boolean" variableName="isReady" type="variable"/>
+  </item>
+  <item type="instance" UID="27"/>
+  <item type="instance" UID="29"/>
+  <item type="instance" UID="2"/>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="IsCookiesEnabledEvent" callName="cookiesEnabled" isTrigger="false" target="Browser"/>
+    <item type="action" persistent="false" callTarget="instance" callName="storeLocal" target="WebStorage">
+      <item valueDataType="string" value="%22tel%22" name=""/>
+      <item valueDataType="any" value="Global" name=""/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AISprite4"/>
+    <item type="condition" callTarget="instance" paramsClass="CompareTFTextEvent" callName="compareText" isTrigger="false" target="tel">
+      <item valueDataType="string" value="%22%22" name="text"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setText" target="tel">
+      <item valueDataType="string" value="%22%E8%AF%B7%E8%BE%93%E5%85%A5%E8%B4%A6%E5%8F%B7%22" name="1"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="AISprite4">
+      <item valueDataType="string" value="isReady" name="10" variable="true"/>
+      <item valueDataType="number" value="0" name="11"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AISprite4"/>
+    <item type="condition" callTarget="instance" paramsClass="CompareTFTextEvent" callName="compareText" isTrigger="false" target="yzm">
+      <item valueDataType="string" value="%22%22" name="text"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setText" target="yzm">
+      <item valueDataType="string" value="%22%E8%AF%B7%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%22" name="1"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="setBoolean" target="AISprite4">
+      <item valueDataType="string" value="isReady" name="10" variable="true"/>
+      <item valueDataType="number" value="0" name="11"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="AISprite4"/>
+    <item type="condition" callTarget="instance" paramsClass="CompareInstanceVariableEvent" callName="compareInstanceVariable" isTrigger="false" target="AISprite4">
+      <item valueDataType="string" value="isReady" name="instanceVariable" variable="true"/>
+      <item valueDataType="string" value="%22equalTo%22" name="operationType"/>
+      <item valueDataType="any" value="true" name="value"/>
+    </item>
+    <item type="action" persistent="false" callTarget="instance" callName="requestFromURL" target="Ajax">
+      <item valueDataType="string" value="%22%22" name="tag"/>
+      <item valueDataType="string" value="%22http%3A%2F%2F%22" name="url"/>
+    </item>
+  </item>
+</eventSheets>

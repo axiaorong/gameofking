@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eventSheets layout="newScene1" previous="" next="" version="2.2">
+  <item type="instance" UID="69"/>
+  <item type="instance" UID="66">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="64">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="62">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="60">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="58">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="56">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="54">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="52">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="50">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="48">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="0" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="instance" UID="41">
+    <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+      <item valueDataType="number" value="1" name="activeAtStartType"/>
+      <item valueDataType="number" value="1" name="fadeInTime"/>
+      <item valueDataType="number" value="2" name="waitTime"/>
+      <item valueDataType="number" value="0" name="fadeOutTime"/>
+      <item valueDataType="number" value="1" name="loopTimes"/>
+      <item valueDataType="number" value="1" name="destoryType"/>
+    </item>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt1" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt2" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt2" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt3" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt3" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt4" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt4" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt5" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt5" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt6" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt6" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt7" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt7" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt8" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt8" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt9" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt9" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt10" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt10" behaviorName="淡入淡出"/>
+    <item type="action" persistent="false" callTarget="instance" callName="startFade" target="txt11" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt11" behaviorName="淡入淡出"/>
+  </item>
+  <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
+    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="nextpage"/>
+  </item>
+</eventSheets>
