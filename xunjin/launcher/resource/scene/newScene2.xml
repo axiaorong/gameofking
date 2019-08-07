@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout id="null" sceneSize="414,736" next="newScene2" previous="" eventSheet="newScene1EventSheet" version="2.2">
+<layout id="null" sceneSize="414,736" next="MainScene" previous="newScene1" eventSheet="newScene2EventSheet" version="2.2">
   <layer index="0" parallaxX="100" parallaxY="100" layerAlpha="1" layerVisible="true" cacheAsBitmap="false" bgColor="" bgColorAlpha="" layerScaleX="100" layerScaleY="100"/>
-  <item UID="41" plugin="AITextField" name="txt1" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="0" family="text">
+  <item UID="78" plugin="AITextField" name="txt1" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="0" family="text">
     <item name="name" value="txt1" valueDataType="string"/>
-    <item name="uiGuid" value="41" valueDataType="string"/>
+    <item name="uiGuid" value="78" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
     <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="-5.006372242884254" valueDataType="number"/>
-    <item name="y" value="1.3545180543340507" valueDataType="number"/>
+    <item name="x" value="0" valueDataType="number"/>
+    <item name="y" value="0" valueDataType="number"/>
     <item name="anchorX" value="0" valueDataType="number"/>
     <item name="anchorY" value="0" valueDataType="number"/>
     <item name="width" value="400" valueDataType="number"/>
     <item name="height" value="60" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="1" valueDataType="number"/>
-    <item name="text" value="A%E6%98%9F%E7%90%83%EF%BC%8C" valueDataType="string"/>
+    <item name="text" value="%E6%9F%90%E5%B9%B4%E6%9F%90%E6%97%A5%EF%BC%8C" valueDataType="string"/>
     <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
     <item name="size" value="30" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>
@@ -40,9 +40,9 @@
       </item>
     </item>
   </item>
-  <item UID="48" plugin="AITextField" name="txt2" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="1" family="text">
+  <item UID="80" plugin="AITextField" name="txt2" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="1" family="text">
     <item name="name" value="txt2" valueDataType="string"/>
-    <item name="uiGuid" value="48" valueDataType="string"/>
+    <item name="uiGuid" value="80" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
     <item name="visible" value="true" valueDataType="boolean"/>
     <item name="x" value="0" valueDataType="number"/>
@@ -53,7 +53,7 @@
     <item name="height" value="60" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%B1%BB" valueDataType="string"/>
+    <item name="text" value="%E4%B8%80%E4%B8%AA%E5%AE%81%E9%9D%99%E7%9A%84%E5%B0%8F%E9%95%87%EF%BC%8C" valueDataType="string"/>
     <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
     <item name="size" value="30" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>
@@ -79,27 +79,27 @@
       </item>
     </item>
   </item>
-  <item UID="50" plugin="AITextField" name="txt3" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="2" family="text">
+  <item UID="82" plugin="AITextField" name="txt3" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="2" family="text">
     <item name="name" value="txt3" valueDataType="string"/>
-    <item name="uiGuid" value="50" valueDataType="string"/>
+    <item name="uiGuid" value="82" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
     <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="0" valueDataType="number"/>
+    <item name="x" value="10" valueDataType="number"/>
     <item name="y" value="120" valueDataType="number"/>
     <item name="anchorX" value="0" valueDataType="number"/>
     <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
+    <item name="width" value="130.2257511143035" valueDataType="number"/>
     <item name="height" value="60" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E8%B7%9F%E5%90%84%E7%A7%8D%E6%9C%89%E7%81%B5%E6%99%BA%E7%9A%84" valueDataType="string"/>
+    <item name="text" value="%E6%9C%89%E4%B8%80%E4%BD%8D" valueDataType="string"/>
     <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
     <item name="size" value="30" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>
     <item name="bold" value="false" valueDataType="boolean"/>
     <item name="enableInput" value="false" valueDataType="boolean"/>
     <item name="inputType" value="text" valueDataType="string"/>
-    <item name="textAlign" value="center" valueDataType="string"/>
+    <item name="textAlign" value="right" valueDataType="string"/>
     <item name="verticalAlign" value="middle" valueDataType="string"/>
     <item name="maxChars" value="100" valueDataType="number"/>
     <item name="italic" value="false" valueDataType="boolean"/>
@@ -118,20 +118,49 @@
       </item>
     </item>
   </item>
-  <item UID="52" plugin="AITextField" name="txt4" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="3" family="text">
-    <item name="name" value="txt4" valueDataType="string"/>
-    <item name="uiGuid" value="52" valueDataType="string"/>
-    <item name="global" value="false" valueDataType="boolean"/>
+  <item UID="84" plugin="AITextField" name="picksex" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="3" family="text">
+    <item name="name" value="picksex" valueDataType="string"/>
+    <item name="uiGuid" value="84" valueDataType="string"/>
+    <item name="global" value="true" valueDataType="boolean"/>
     <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="0" valueDataType="number"/>
-    <item name="y" value="180" valueDataType="number"/>
+    <item name="x" value="146.63683950047957" valueDataType="number"/>
+    <item name="y" value="120" valueDataType="number"/>
     <item name="anchorX" value="0" valueDataType="number"/>
     <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
+    <item name="width" value="263.3631604995204" valueDataType="number"/>
     <item name="height" value="60" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E5%AE%A0%E7%89%A9%E5%90%8C%E5%AD%98%E7%9A%84%E6%98%9F%E7%90%83%2C" valueDataType="string"/>
+    <item name="text" value="%E6%97%A0%E5%90%8D%E5%B0%91%E5%A5%B3" valueDataType="string"/>
+    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
+    <item name="size" value="30" valueDataType="number"/>
+    <item name="textColor" value="16777215" valueDataType="number"/>
+    <item name="bold" value="false" valueDataType="boolean"/>
+    <item name="enableInput" value="false" valueDataType="boolean"/>
+    <item name="inputType" value="text" valueDataType="string"/>
+    <item name="textAlign" value="left" valueDataType="string"/>
+    <item name="verticalAlign" value="middle" valueDataType="string"/>
+    <item name="maxChars" value="100" valueDataType="number"/>
+    <item name="italic" value="false" valueDataType="boolean"/>
+    <item name="wordWrap" value="false" valueDataType="boolean"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="layer" value="0" valueDataType="number"/>
+  </item>
+  <item UID="86" plugin="AITextField" name="sex" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="4" family="text">
+    <item name="name" value="sex" valueDataType="string"/>
+    <item name="uiGuid" value="86" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="104.32554810685042" valueDataType="number"/>
+    <item name="y" value="178.0912199371295" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="196.55585829905297" valueDataType="number"/>
+    <item name="height" value="60" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="text" value="%E9%80%89%E6%8B%A9%E4%BD%A0%E7%9A%84%E6%80%A7%E5%88%AB" valueDataType="string"/>
     <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
     <item name="size" value="30" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>
@@ -157,24 +186,82 @@
       </item>
     </item>
   </item>
-  <item UID="54" plugin="AITextField" name="txt5" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="4" family="text">
-    <item name="name" value="txt5" valueDataType="string"/>
-    <item name="uiGuid" value="54" valueDataType="string"/>
+  <item UID="89" plugin="AISprite" name="malebg" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="5" family="displayobject">
+    <item name="name" value="malebg" valueDataType="string"/>
+    <item name="uiGuid" value="89" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
     <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="0" valueDataType="number"/>
+    <item name="x" value="114.55" valueDataType="number"/>
     <item name="y" value="240" valueDataType="number"/>
     <item name="anchorX" value="0" valueDataType="number"/>
     <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
+    <item name="width" value="173" valueDataType="number"/>
+    <item name="height" value="59.4432724816628" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="url" value="resource%2FuserAsset%2Fxunjintupian%2Fbg.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C59.44%2C173.00%7C59.44%2C173.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C59.44%2C173.00%7C59.44%2C173.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+        <item valueDataType="number" value="0" name="activeAtStartType"/>
+        <item valueDataType="number" value="1" name="fadeInTime"/>
+        <item valueDataType="number" value="2" name="waitTime"/>
+        <item valueDataType="number" value="0" name="fadeOutTime"/>
+        <item valueDataType="number" value="1" name="loopTimes"/>
+        <item valueDataType="number" value="1" name="destoryType"/>
+      </item>
+    </item>
+  </item>
+  <item UID="91" plugin="AISprite" name="fmalebg" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="6" family="displayobject">
+    <item name="name" value="fmalebg" valueDataType="string"/>
+    <item name="uiGuid" value="91" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="114.55" valueDataType="number"/>
+    <item name="y" value="322.1570752060509" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="173.39596245367113" valueDataType="number"/>
     <item name="height" value="60" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E5%AE%A0%E7%89%A9%E8%83%BD%E5%B8%AE%E5%8A%A9%E4%BA%BA%E7%B1%BB%E5%8F%91%E5%B1%95%2C" valueDataType="string"/>
+    <item name="url" value="resource%2FuserAsset%2Fxunjintupian%2Fbg.png" valueDataType="string"/>
+    <item name="enabled" value="true" valueDataType="boolean"/>
+    <item name="collision" value="false" valueDataType="boolean"/>
+    <item name="collisionData" value="0%2Fn0.00%7C60.00%2C173.40%7C60.00%2C173.40%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C60.00%2C173.40%7C60.00%2C173.40%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
+    <item name="layer" value="0" valueDataType="number"/>
+    <item name="behaviors">
+      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
+        <item valueDataType="number" value="0" name="activeAtStartType"/>
+        <item valueDataType="number" value="1" name="fadeInTime"/>
+        <item valueDataType="number" value="2" name="waitTime"/>
+        <item valueDataType="number" value="0" name="fadeOutTime"/>
+        <item valueDataType="number" value="1" name="loopTimes"/>
+        <item valueDataType="number" value="1" name="destoryType"/>
+      </item>
+    </item>
+  </item>
+  <item UID="98" plugin="AITextField" name="girl" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="7" family="text">
+    <item name="name" value="girl" valueDataType="string"/>
+    <item name="uiGuid" value="98" valueDataType="string"/>
+    <item name="global" value="false" valueDataType="boolean"/>
+    <item name="visible" value="true" valueDataType="boolean"/>
+    <item name="x" value="113.55" valueDataType="number"/>
+    <item name="y" value="322" valueDataType="number"/>
+    <item name="anchorX" value="0" valueDataType="number"/>
+    <item name="anchorY" value="0" valueDataType="number"/>
+    <item name="width" value="173" valueDataType="number"/>
+    <item name="height" value="60" valueDataType="number"/>
+    <item name="angle" value="0" valueDataType="number"/>
+    <item name="alpha" value="0" valueDataType="number"/>
+    <item name="text" value="%E5%A5%B3" valueDataType="string"/>
     <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
     <item name="size" value="30" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>
-    <item name="bold" value="false" valueDataType="boolean"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
     <item name="enableInput" value="false" valueDataType="boolean"/>
     <item name="inputType" value="text" valueDataType="string"/>
     <item name="textAlign" value="center" valueDataType="string"/>
@@ -196,24 +283,24 @@
       </item>
     </item>
   </item>
-  <item UID="56" plugin="AITextField" name="txt6" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="5" family="text">
-    <item name="name" value="txt6" valueDataType="string"/>
-    <item name="uiGuid" value="56" valueDataType="string"/>
+  <item UID="94" plugin="AITextField" name="male" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="8" family="text">
+    <item name="name" value="male" valueDataType="string"/>
+    <item name="uiGuid" value="94" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
     <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="10" valueDataType="number"/>
-    <item name="y" value="300" valueDataType="number"/>
+    <item name="x" value="114.55" valueDataType="number"/>
+    <item name="y" value="240" valueDataType="number"/>
     <item name="anchorX" value="0" valueDataType="number"/>
     <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
+    <item name="width" value="173" valueDataType="number"/>
     <item name="height" value="60" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
     <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E8%80%8C%E5%9C%A8%E4%BA%BA%E7%B1%BB%E7%9A%84%E5%B8%AE%E5%8A%A9%E4%B8%8B%2C" valueDataType="string"/>
+    <item name="text" value="%E7%94%B7" valueDataType="string"/>
     <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
     <item name="size" value="30" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>
-    <item name="bold" value="false" valueDataType="boolean"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
     <item name="enableInput" value="false" valueDataType="boolean"/>
     <item name="inputType" value="text" valueDataType="string"/>
     <item name="textAlign" value="center" valueDataType="string"/>
@@ -235,24 +322,24 @@
       </item>
     </item>
   </item>
-  <item UID="58" plugin="AITextField" name="txt7" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="6" family="text">
-    <item name="name" value="txt7" valueDataType="string"/>
-    <item name="uiGuid" value="58" valueDataType="string"/>
+  <item UID="96" plugin="AITextField" name="fmale" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="9" family="text">
+    <item name="name" value="AISprite88" valueDataType="string"/>
+    <item name="uiGuid" value="96" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
     <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="10" valueDataType="number"/>
-    <item name="y" value="360" valueDataType="number"/>
+    <item name="x" value="112.86" valueDataType="number"/>
+    <item name="y" value="320.41" valueDataType="number"/>
     <item name="anchorX" value="0" valueDataType="number"/>
     <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
+    <item name="width" value="173" valueDataType="number"/>
     <item name="height" value="60" valueDataType="number"/>
     <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E5%AE%A0%E7%89%A9%E4%B9%9F%E4%B8%8D%E5%81%9C%E7%B9%81%E8%A1%8D" valueDataType="string"/>
+    <item name="alpha" value="0.1" valueDataType="number"/>
+    <item name="text" value="%E5%A5%B3" valueDataType="string"/>
     <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
     <item name="size" value="30" valueDataType="number"/>
     <item name="textColor" value="16777215" valueDataType="number"/>
-    <item name="bold" value="false" valueDataType="boolean"/>
+    <item name="bold" value="true" valueDataType="boolean"/>
     <item name="enableInput" value="false" valueDataType="boolean"/>
     <item name="inputType" value="text" valueDataType="string"/>
     <item name="textAlign" value="center" valueDataType="string"/>
@@ -273,180 +360,5 @@
         <item valueDataType="number" value="1" name="destoryType"/>
       </item>
     </item>
-  </item>
-  <item UID="60" plugin="AITextField" name="txt8" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="7" family="text">
-    <item name="name" value="txt8" valueDataType="string"/>
-    <item name="uiGuid" value="60" valueDataType="string"/>
-    <item name="global" value="false" valueDataType="boolean"/>
-    <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="10" valueDataType="number"/>
-    <item name="y" value="420" valueDataType="number"/>
-    <item name="anchorX" value="0" valueDataType="number"/>
-    <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
-    <item name="height" value="60" valueDataType="number"/>
-    <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E4%B8%8D%E6%96%AD%E5%BC%BA%E5%A4%A7%E8%87%AA%E8%BA%AB%2C" valueDataType="string"/>
-    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
-    <item name="size" value="30" valueDataType="number"/>
-    <item name="textColor" value="16777215" valueDataType="number"/>
-    <item name="bold" value="false" valueDataType="boolean"/>
-    <item name="enableInput" value="false" valueDataType="boolean"/>
-    <item name="inputType" value="text" valueDataType="string"/>
-    <item name="textAlign" value="center" valueDataType="string"/>
-    <item name="verticalAlign" value="middle" valueDataType="string"/>
-    <item name="maxChars" value="100" valueDataType="number"/>
-    <item name="italic" value="false" valueDataType="boolean"/>
-    <item name="wordWrap" value="false" valueDataType="boolean"/>
-    <item name="enabled" value="true" valueDataType="boolean"/>
-    <item name="collision" value="false" valueDataType="boolean"/>
-    <item name="layer" value="0" valueDataType="number"/>
-    <item name="behaviors">
-      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
-        <item valueDataType="number" value="0" name="activeAtStartType"/>
-        <item valueDataType="number" value="1" name="fadeInTime"/>
-        <item valueDataType="number" value="2" name="waitTime"/>
-        <item valueDataType="number" value="0" name="fadeOutTime"/>
-        <item valueDataType="number" value="1" name="loopTimes"/>
-        <item valueDataType="number" value="1" name="destoryType"/>
-      </item>
-    </item>
-  </item>
-  <item UID="62" plugin="AITextField" name="txt9" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="8" family="text">
-    <item name="name" value="txt9" valueDataType="string"/>
-    <item name="uiGuid" value="62" valueDataType="string"/>
-    <item name="global" value="false" valueDataType="boolean"/>
-    <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="10" valueDataType="number"/>
-    <item name="y" value="482.8199889799639" valueDataType="number"/>
-    <item name="anchorX" value="0" valueDataType="number"/>
-    <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
-    <item name="height" value="60" valueDataType="number"/>
-    <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E5%85%B6%E4%B8%AD%E6%9C%89%E5%96%84%E4%BA%8E%E5%88%A9%E7%94%A8%E5%AE%A0%E7%89%A9" valueDataType="string"/>
-    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
-    <item name="size" value="30" valueDataType="number"/>
-    <item name="textColor" value="16777215" valueDataType="number"/>
-    <item name="bold" value="false" valueDataType="boolean"/>
-    <item name="enableInput" value="false" valueDataType="boolean"/>
-    <item name="inputType" value="text" valueDataType="string"/>
-    <item name="textAlign" value="center" valueDataType="string"/>
-    <item name="verticalAlign" value="middle" valueDataType="string"/>
-    <item name="maxChars" value="100" valueDataType="number"/>
-    <item name="italic" value="false" valueDataType="boolean"/>
-    <item name="wordWrap" value="false" valueDataType="boolean"/>
-    <item name="enabled" value="true" valueDataType="boolean"/>
-    <item name="collision" value="false" valueDataType="boolean"/>
-    <item name="layer" value="0" valueDataType="number"/>
-    <item name="behaviors">
-      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
-        <item valueDataType="number" value="0" name="activeAtStartType"/>
-        <item valueDataType="number" value="1" name="fadeInTime"/>
-        <item valueDataType="number" value="2" name="waitTime"/>
-        <item valueDataType="number" value="0" name="fadeOutTime"/>
-        <item valueDataType="number" value="1" name="loopTimes"/>
-        <item valueDataType="number" value="1" name="destoryType"/>
-      </item>
-    </item>
-  </item>
-  <item UID="64" plugin="AITextField" name="txt10" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="9" family="text">
-    <item name="name" value="txt10" valueDataType="string"/>
-    <item name="uiGuid" value="64" valueDataType="string"/>
-    <item name="global" value="false" valueDataType="boolean"/>
-    <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="10" valueDataType="number"/>
-    <item name="y" value="540" valueDataType="number"/>
-    <item name="anchorX" value="0" valueDataType="number"/>
-    <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
-    <item name="height" value="60" valueDataType="number"/>
-    <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E5%BE%81%E6%9C%8D%E5%90%84%E7%A7%8D%E5%8D%B1%E9%9A%BE%E7%9A%84%2C" valueDataType="string"/>
-    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
-    <item name="size" value="30" valueDataType="number"/>
-    <item name="textColor" value="16777215" valueDataType="number"/>
-    <item name="bold" value="false" valueDataType="boolean"/>
-    <item name="enableInput" value="false" valueDataType="boolean"/>
-    <item name="inputType" value="text" valueDataType="string"/>
-    <item name="textAlign" value="center" valueDataType="string"/>
-    <item name="verticalAlign" value="middle" valueDataType="string"/>
-    <item name="maxChars" value="100" valueDataType="number"/>
-    <item name="italic" value="false" valueDataType="boolean"/>
-    <item name="wordWrap" value="false" valueDataType="boolean"/>
-    <item name="enabled" value="true" valueDataType="boolean"/>
-    <item name="collision" value="false" valueDataType="boolean"/>
-    <item name="layer" value="0" valueDataType="number"/>
-    <item name="behaviors">
-      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
-        <item valueDataType="number" value="0" name="activeAtStartType"/>
-        <item valueDataType="number" value="1" name="fadeInTime"/>
-        <item valueDataType="number" value="2" name="waitTime"/>
-        <item valueDataType="number" value="0" name="fadeOutTime"/>
-        <item valueDataType="number" value="1" name="loopTimes"/>
-        <item valueDataType="number" value="1" name="destoryType"/>
-      </item>
-    </item>
-  </item>
-  <item UID="66" plugin="AITextField" name="txt11" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="10" family="text">
-    <item name="name" value="txt11" valueDataType="string"/>
-    <item name="uiGuid" value="66" valueDataType="string"/>
-    <item name="global" value="false" valueDataType="boolean"/>
-    <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="10" valueDataType="number"/>
-    <item name="y" value="600" valueDataType="number"/>
-    <item name="anchorX" value="0" valueDataType="number"/>
-    <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="400" valueDataType="number"/>
-    <item name="height" value="60" valueDataType="number"/>
-    <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E5%A4%A7%E9%99%86%E7%9A%84%E4%BA%BA%E4%BB%AC%E7%A7%B0%E4%BB%96%E4%BB%AC%E4%B8%BA%E5%8F%AC%E5%94%A4%E5%B8%88" valueDataType="string"/>
-    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
-    <item name="size" value="30" valueDataType="number"/>
-    <item name="textColor" value="16777215" valueDataType="number"/>
-    <item name="bold" value="false" valueDataType="boolean"/>
-    <item name="enableInput" value="false" valueDataType="boolean"/>
-    <item name="inputType" value="text" valueDataType="string"/>
-    <item name="textAlign" value="center" valueDataType="string"/>
-    <item name="verticalAlign" value="middle" valueDataType="string"/>
-    <item name="maxChars" value="100" valueDataType="number"/>
-    <item name="italic" value="false" valueDataType="boolean"/>
-    <item name="wordWrap" value="false" valueDataType="boolean"/>
-    <item name="enabled" value="true" valueDataType="boolean"/>
-    <item name="collision" value="false" valueDataType="boolean"/>
-    <item name="layer" value="0" valueDataType="number"/>
-    <item name="behaviors">
-      <item type="behavior" behaviorType="FadeBehavior" name="淡入淡出">
-        <item valueDataType="number" value="0" name="activeAtStartType"/>
-        <item valueDataType="number" value="1" name="fadeInTime"/>
-        <item valueDataType="number" value="2" name="waitTime"/>
-        <item valueDataType="number" value="0" name="fadeOutTime"/>
-        <item valueDataType="number" value="1" name="loopTimes"/>
-        <item valueDataType="number" value="1" name="destoryType"/>
-      </item>
-    </item>
-  </item>
-  <item UID="69" plugin="AISprite" name="nextpage" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="11" family="displayobject">
-    <item name="name" value="nextpage" valueDataType="string"/>
-    <item name="uiGuid" value="69" valueDataType="string"/>
-    <item name="global" value="false" valueDataType="boolean"/>
-    <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="337.0941089391589" valueDataType="number"/>
-    <item name="y" value="658.2903297711434" valueDataType="number"/>
-    <item name="anchorX" value="0" valueDataType="number"/>
-    <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="68" valueDataType="number"/>
-    <item name="height" value="68" valueDataType="number"/>
-    <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="1" valueDataType="number"/>
-    <item name="url" value="resource%2FuserAsset%2Fxunjintupian%2FBeach_gorka_06.png" valueDataType="string"/>
-    <item name="enabled" value="true" valueDataType="boolean"/>
-    <item name="collision" value="false" valueDataType="boolean"/>
-    <item name="collisionData" value="0%2Fn0.00%7C68.00%2C68.00%7C68.00%2C68.00%7C0.00%2C0.00%7C0.00" sourceValue="0%2Fn0.00%7C68.00%2C68.00%7C68.00%2C68.00%7C0.00%2C0.00%7C0.00" valueDataType="string"/>
-    <item name="layer" value="0" valueDataType="number"/>
   </item>
 </layout>

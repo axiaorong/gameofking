@@ -155,6 +155,9 @@
     <item type="condition" callTarget="instance" paramsClass="FadeOnFadeInFinishedEvent" callName="onFadeInFinished" isTrigger="true" target="txt11" behaviorName="淡入淡出"/>
   </item>
   <item type="event" conditionRelationShip="true" triggerOnceWhileTrue="false">
-    <item type="condition" callTarget="instance" paramsClass="OnButtonBeginEvent" callName="onButtonBegin" isTrigger="true" target="nextpage"/>
+    <item type="condition" callTarget="instance" paramsClass="OnButtonTapEvent" callName="onButtonTap" isTrigger="true" target="nextpage"/>
+    <item type="action" persistent="false" callTarget="instance" callName="gotoScene" target="System">
+      <item valueDataType="string" value="%22newScene2%22" name="18"/>
+    </item>
   </item>
 </eventSheets>

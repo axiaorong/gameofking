@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="xunjin" version="2.2" showFps="0" openLog="1" fps="60" scaleMode="0" orientaion="0" renderMode="1" bgColor="0" stagewidth="414" stageheight="736" startscenename="newScene1">
   <objects>
+    <type uiname="Browser" uitype="AIBrowser"/>
     <type uiname="Ajax" uitype="AIAjax"/>
     <type uiname="WebSocket" uitype="AIWebSocket"/>
-    <type uiname="Browser" uitype="AIBrowser"/>
-    <type uiname="Global" uitype="Global"/>
+    <type uiname="Keyboard" uitype="AIKeyboard"/>
     <type uiname="System" uitype="AISystem"/>
+    <type uiname="Global" uitype="Global"/>
     <type uiname="WebStorage" uitype="AIWebStorage"/>
     <type uiname="Function" uitype="AIFunction"/>
     <type uiname="Touch" uitype="AITouch"/>
-    <type uiname="Keyboard" uitype="AIKeyboard"/>
     <type uiname="MainScene" uitype="Scene"/>
     <type uiname="Layer89" uitype="Layer"/>
     <type uiname="AISprite1" uitype="AISprite"/>
@@ -34,6 +34,15 @@
     <type uiname="txt10" uitype="AITextField"/>
     <type uiname="txt11" uitype="AITextField"/>
     <type uiname="nextpage" uitype="AISprite"/>
+    <type uiname="newScene2" uitype="Scene"/>
+    <type uiname="Layer74" uitype="Layer"/>
+    <type uiname="picksex" uitype="AITextField"/>
+    <type uiname="sex" uitype="AITextField"/>
+    <type uiname="malebg" uitype="AISprite"/>
+    <type uiname="fmalebg" uitype="AISprite"/>
+    <type uiname="male" uitype="AITextField"/>
+    <type uiname="fmale" uitype="AITextField"/>
+    <type uiname="girl" uitype="AITextField"/>
   </objects>
   <eventsheet>
     <sheet name="MainSceneEventSheet" targetscene="MainScene">
@@ -317,11 +326,247 @@
       <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
         <description>null</description>
         <conditons>
-          <condition type="OnButtonBeginEvent" targetuiname="nextpage" targetuitype="AISprite" invert="false" operatorType="0" isConflict="false" enabled="true">
+          <condition type="OnButtonTapEvent" targetuiname="nextpage" targetuitype="AISprite" invert="false" operatorType="0" isConflict="false" enabled="true">
             <properties/>
           </condition>
         </conditons>
-        <actions/>
+        <actions>
+          <action type="gotoScene" targetuiname="System" targetuitype="AISystem" isConflict="false" enabled="true">
+            <properties>
+              <p key="18" value="%22newScene2%22" valuetype="string">
+                <description>%E6%8C%87%E5%AE%9A%E8%A6%81%E8%B7%B3%E8%BD%AC%E7%9A%84%E5%9C%BA%E6%99%AF%E5%90%8D%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+    </sheet>
+    <sheet name="newScene2EventSheet" targetscene="newScene2">
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="OnSceneInitCompleteEvent" targetuiname="System" targetuitype="AISystem" invert="false" operatorType="0" isConflict="false" enabled="false">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="startFade" targetuiname="txt1" targetuitype="AITextField" isConflict="false" behaviorname="淡入淡出" behavior="FadeBehavior" enabled="true">
+            <properties/>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="FadeOnFadeInFinishedEvent" targetuiname="txt1" targetuitype="AITextField" invert="false" operatorType="0" behaviorname="淡入淡出" behavior="FadeBehavior" isConflict="false" enabled="true">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="startFade" targetuiname="txt2" targetuitype="AITextField" isConflict="false" behaviorname="淡入淡出" behavior="FadeBehavior" enabled="true">
+            <properties/>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="FadeOnFadeInFinishedEvent" targetuiname="txt2" targetuitype="AITextField" invert="false" operatorType="0" behaviorname="淡入淡出" behavior="FadeBehavior" isConflict="false" enabled="true">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="startFade" targetuiname="txt3" targetuitype="AITextField" isConflict="false" behaviorname="淡入淡出" behavior="FadeBehavior" enabled="true">
+            <properties/>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="FadeOnFadeInFinishedEvent" targetuiname="txt3" targetuitype="AITextField" invert="false" operatorType="0" behaviorname="淡入淡出" behavior="FadeBehavior" isConflict="false" enabled="true">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="startFade" targetuiname="sex" targetuitype="AITextField" isConflict="false" behaviorname="淡入淡出" behavior="FadeBehavior" enabled="true">
+            <properties/>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="FadeOnFadeInFinishedEvent" targetuiname="txt3" targetuitype="AITextField" invert="false" operatorType="0" behaviorname="淡入淡出" behavior="FadeBehavior" isConflict="false" enabled="true">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="startFade" targetuiname="girl" targetuitype="AITextField" isConflict="false" behaviorname="淡入淡出" behavior="FadeBehavior" enabled="true">
+            <properties/>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="FadeOnFadeInFinishedEvent" targetuiname="txt3" targetuitype="AITextField" invert="false" operatorType="0" behaviorname="淡入淡出" behavior="FadeBehavior" isConflict="false" enabled="true">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="startFade" targetuiname="male" targetuitype="AITextField" isConflict="false" behaviorname="淡入淡出" behavior="FadeBehavior" enabled="true">
+            <properties/>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="FadeOnFadeInFinishedEvent" targetuiname="txt3" targetuitype="AITextField" invert="false" operatorType="0" behaviorname="淡入淡出" behavior="FadeBehavior" isConflict="false" enabled="true">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="setAlpha" targetuiname="fmalebg" targetuitype="AISprite" isConflict="false" enabled="true">
+            <properties>
+              <p key="10" value="1" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6%E3%80%82%EF%BC%88%E5%80%BC%E5%9C%A80~1%E4%B9%8B%E9%97%B4%EF%BC%89</description>
+              </p>
+            </properties>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="FadeOnFadeInFinishedEvent" targetuiname="txt3" targetuitype="AITextField" invert="false" operatorType="0" behaviorname="淡入淡出" behavior="FadeBehavior" isConflict="false" enabled="true">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="setAlpha" targetuiname="malebg" targetuitype="AISprite" isConflict="false" enabled="true">
+            <properties>
+              <p key="10" value="1" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6%E3%80%82%EF%BC%88%E5%80%BC%E5%9C%A80~1%E4%B9%8B%E9%97%B4%EF%BC%89</description>
+              </p>
+            </properties>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="OnButtonTapEvent" targetuiname="malebg" targetuitype="AISprite" invert="false" operatorType="0" isConflict="false" enabled="false">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="setText" targetuiname="picksex" targetuitype="AITextField" isConflict="false" enabled="false">
+            <properties>
+              <p key="1" value="%22%E6%97%A0%E7%9F%A5%E5%B0%91%E5%A5%B3%22" valuetype="string">
+                <description>%E8%AE%BE%E7%BD%AE%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setAlpha" targetuiname="picksex" targetuitype="AITextField" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="1" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6%E3%80%82%EF%BC%88%E5%80%BC%E5%9C%A80~1%E4%B9%8B%E9%97%B4%EF%BC%89</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setVisible" targetuiname="fmalebg" targetuitype="AISprite" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="0" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%BE%E7%A4%BA%E6%88%96%E8%80%85%E9%9A%90%E8%97%8F%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setVisible" targetuiname="fmale" targetuitype="AITextField" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="0" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%BE%E7%A4%BA%E6%88%96%E8%80%85%E9%9A%90%E8%97%8F%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setVisible" targetuiname="malebg" targetuitype="AISprite" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="0" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%BE%E7%A4%BA%E6%88%96%E8%80%85%E9%9A%90%E8%97%8F%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setVisible" targetuiname="male" targetuitype="AITextField" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="0" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%BE%E7%A4%BA%E6%88%96%E8%80%85%E9%9A%90%E8%97%8F%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+        </actions>
+        <subevent/>
+      </event>
+      <event name="null" enabled="true" relation="1" triggerOnceWhileTrue="false">
+        <description>null</description>
+        <conditons>
+          <condition type="OnButtonTapEvent" targetuiname="fmalebg" targetuitype="AISprite" invert="false" operatorType="0" isConflict="false" enabled="false">
+            <properties/>
+          </condition>
+        </conditons>
+        <actions>
+          <action type="setText" targetuiname="picksex" targetuitype="AITextField" isConflict="false" enabled="false">
+            <properties>
+              <p key="1" value="%22%E6%97%A0%E7%9F%A5%E5%B0%91%E7%94%B7%22" valuetype="string">
+                <description>%E8%AE%BE%E7%BD%AE%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setAlpha" targetuiname="picksex" targetuitype="AITextField" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="1" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6%E3%80%82%EF%BC%88%E5%80%BC%E5%9C%A80~1%E4%B9%8B%E9%97%B4%EF%BC%89</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setVisible" targetuiname="fmalebg" targetuitype="AISprite" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="0" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%BE%E7%A4%BA%E6%88%96%E8%80%85%E9%9A%90%E8%97%8F%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setVisible" targetuiname="malebg" targetuitype="AISprite" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="0" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%BE%E7%A4%BA%E6%88%96%E8%80%85%E9%9A%90%E8%97%8F%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setVisible" targetuiname="male" targetuitype="AITextField" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="0" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%BE%E7%A4%BA%E6%88%96%E8%80%85%E9%9A%90%E8%97%8F%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+          <action type="setVisible" targetuiname="fmale" targetuitype="AITextField" isConflict="false" enabled="false">
+            <properties>
+              <p key="10" value="0" valuetype="number">
+                <description>%E8%AE%BE%E7%BD%AE%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%BE%E7%A4%BA%E6%88%96%E8%80%85%E9%9A%90%E8%97%8F%E3%80%82</description>
+              </p>
+            </properties>
+          </action>
+        </actions>
         <subevent/>
       </event>
     </sheet>
@@ -394,7 +639,7 @@
                 <p key="url" value="resource%2FuserAsset%2Fxunjintupian%2FBeach_gorka_06.png" valuetype="string">
                   <description>%E5%9B%BE%E7%89%87%E6%BA%90</description>
                 </p>
-                <p key="enabled" value="false" valuetype="boolean">
+                <p key="enabled" value="true" valuetype="boolean">
                   <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
                 </p>
                 <p key="collision" value="false" valuetype="boolean">
@@ -1502,10 +1747,10 @@
                 <p key="visible" value="true" valuetype="boolean">
                   <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
                 </p>
-                <p key="x" value="1.5073397525395649" valuetype="number">
+                <p key="x" value="-5.006372242884254" valuetype="number">
                   <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
                 </p>
-                <p key="y" value="0.6029359010158828" valuetype="number">
+                <p key="y" value="1.3545180543340507" valuetype="number">
                   <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
                 </p>
                 <p key="anchorX" value="0" valuetype="number">
@@ -1527,6 +1772,1045 @@
                   <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
                 </p>
                 <p key="text" value="A%E6%98%9F%E7%90%83%EF%BC%8C" valuetype="string">
+                  <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
+                </p>
+                <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
+                  <description>%E5%AD%97%E4%BD%93</description>
+                </p>
+                <p key="size" value="30" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F</description>
+                </p>
+                <p key="textColor" value="16777215" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2</description>
+                </p>
+                <p key="bold" value="false" valuetype="boolean">
+                  <description>%E7%B2%97%E4%BD%93</description>
+                </p>
+                <p key="enableInput" value="false" valuetype="boolean">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="inputType" value="text" valuetype="string">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="textAlign" value="center" valuetype="string">
+                  <description>%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="verticalAlign" value="middle" valuetype="string">
+                  <description>%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="maxChars" value="100" valuetype="number">
+                  <description>%E5%AD%97%E6%95%B0%E4%B8%8A%E9%99%90</description>
+                </p>
+                <p key="italic" value="false" valuetype="boolean">
+                  <description>%E6%96%9C%E4%BD%93</description>
+                </p>
+                <p key="wordWrap" value="false" valuetype="boolean">
+                  <description>%E6%94%AF%E6%8C%81%E6%8D%A2%E8%A1%8C</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E</description>
+                </p>
+              </properties>
+              <customproperties/>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+          </children>
+        </object>
+      </children>
+    </object>
+    <object type="Scene" uiname="newScene2" layer="0">
+      <familys/>
+      <properties>
+        <p key="sceneWidth" value="414" valuetype="number"/>
+        <p key="sceneHeight" value="736" valuetype="number"/>
+        <p key="width" value="1708" valuetype="number"/>
+        <p key="height" value="960" valuetype="number"/>
+      </properties>
+      <customproperties/>
+      <behaviors/>
+      <children>
+        <object type="Layer" uiname="Layer74" parallaxX="100" parallaxY="100" layer="0">
+          <properties>
+            <p key="sceneWidth" value="414" valuetype="number"/>
+            <p key="sceneHeight" value="736" valuetype="number"/>
+            <p key="parallaxX" value="100" valuetype="number"/>
+            <p key="parallaxY" value="100" valuetype="number"/>
+            <p key="layerAlpha" value="1" valuetype="number"/>
+            <p key="layerVisible" value="true" valuetype="boolean"/>
+            <p key="layerScaleX" value="100" valuetype="number"/>
+            <p key="layerScaleY" value="100" valuetype="number"/>
+            <p key="cacheAsBitmap" value="false" valuetype="boolean"/>
+          </properties>
+          <customproperties/>
+          <behaviors/>
+          <children>
+            <object type="AITextField" uiname="fmale" layer="0">
+              <properties>
+                <p key="name" value="AISprite88" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="96" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="112.86" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="320.41" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="173" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0.1" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="text" value="%E5%A5%B3" valuetype="string">
+                  <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
+                </p>
+                <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
+                  <description>%E5%AD%97%E4%BD%93</description>
+                </p>
+                <p key="size" value="30" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F</description>
+                </p>
+                <p key="textColor" value="16777215" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2</description>
+                </p>
+                <p key="bold" value="true" valuetype="boolean">
+                  <description>%E7%B2%97%E4%BD%93</description>
+                </p>
+                <p key="enableInput" value="false" valuetype="boolean">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="inputType" value="text" valuetype="string">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="textAlign" value="center" valuetype="string">
+                  <description>%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="verticalAlign" value="middle" valuetype="string">
+                  <description>%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="maxChars" value="100" valuetype="number">
+                  <description>%E5%AD%97%E6%95%B0%E4%B8%8A%E9%99%90</description>
+                </p>
+                <p key="italic" value="false" valuetype="boolean">
+                  <description>%E6%96%9C%E4%BD%93</description>
+                </p>
+                <p key="wordWrap" value="false" valuetype="boolean">
+                  <description>%E6%94%AF%E6%8C%81%E6%8D%A2%E8%A1%8C</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E</description>
+                </p>
+              </properties>
+              <customproperties>
+                <p key="sex" value="%22%E5%B0%91%E7%94%B7%22" valuetype="string"/>
+              </customproperties>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+            <object type="AITextField" uiname="male" layer="0">
+              <properties>
+                <p key="name" value="male" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="94" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="114.55" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="240" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="173" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="text" value="%E7%94%B7" valuetype="string">
+                  <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
+                </p>
+                <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
+                  <description>%E5%AD%97%E4%BD%93</description>
+                </p>
+                <p key="size" value="30" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F</description>
+                </p>
+                <p key="textColor" value="16777215" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2</description>
+                </p>
+                <p key="bold" value="true" valuetype="boolean">
+                  <description>%E7%B2%97%E4%BD%93</description>
+                </p>
+                <p key="enableInput" value="false" valuetype="boolean">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="inputType" value="text" valuetype="string">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="textAlign" value="center" valuetype="string">
+                  <description>%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="verticalAlign" value="middle" valuetype="string">
+                  <description>%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="maxChars" value="100" valuetype="number">
+                  <description>%E5%AD%97%E6%95%B0%E4%B8%8A%E9%99%90</description>
+                </p>
+                <p key="italic" value="false" valuetype="boolean">
+                  <description>%E6%96%9C%E4%BD%93</description>
+                </p>
+                <p key="wordWrap" value="false" valuetype="boolean">
+                  <description>%E6%94%AF%E6%8C%81%E6%8D%A2%E8%A1%8C</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E</description>
+                </p>
+              </properties>
+              <customproperties>
+                <p key="sex" value="%E6%97%A0%E5%90%8D%E5%B0%91%E7%94%B7%E8%AF%9E%E7%94%9F%E4%BA%86" valuetype="string">
+                  <description>%E5%B0%91%E7%94%B7%E8%AF%9E%E7%94%9F%E4%BA%86</description>
+                </p>
+              </customproperties>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+            <object type="AITextField" uiname="girl" layer="0">
+              <properties>
+                <p key="name" value="girl" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="98" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="113.55" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="322" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="173" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="text" value="%E5%A5%B3" valuetype="string">
+                  <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
+                </p>
+                <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
+                  <description>%E5%AD%97%E4%BD%93</description>
+                </p>
+                <p key="size" value="30" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F</description>
+                </p>
+                <p key="textColor" value="16777215" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2</description>
+                </p>
+                <p key="bold" value="true" valuetype="boolean">
+                  <description>%E7%B2%97%E4%BD%93</description>
+                </p>
+                <p key="enableInput" value="false" valuetype="boolean">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="inputType" value="text" valuetype="string">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="textAlign" value="center" valuetype="string">
+                  <description>%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="verticalAlign" value="middle" valuetype="string">
+                  <description>%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="maxChars" value="100" valuetype="number">
+                  <description>%E5%AD%97%E6%95%B0%E4%B8%8A%E9%99%90</description>
+                </p>
+                <p key="italic" value="false" valuetype="boolean">
+                  <description>%E6%96%9C%E4%BD%93</description>
+                </p>
+                <p key="wordWrap" value="false" valuetype="boolean">
+                  <description>%E6%94%AF%E6%8C%81%E6%8D%A2%E8%A1%8C</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E</description>
+                </p>
+              </properties>
+              <customproperties>
+                <p key="sex" value="%E6%97%A0%E5%90%8D%E5%B0%91%E5%A5%B3%E8%AF%9E%E7%94%9F%E4%BA%86" valuetype="string">
+                  <description>%E5%B0%91%E7%94%B7%E8%AF%9E%E7%94%9F%E4%BA%86</description>
+                </p>
+              </customproperties>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+            <object type="AISprite" uiname="fmalebg" layer="0">
+              <properties>
+                <p key="name" value="fmalebg" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="91" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="114.55" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="322.1570752060509" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="173.39596245367113" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="url" value="resource%2FuserAsset%2Fxunjintupian%2Fbg.png" valuetype="string">
+                  <description>%E5%9B%BE%E7%89%87%E6%BA%90</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E%E6%A3%80%E6%B5%8B</description>
+                </p>
+                <p key="collisionData" value="%5Bobject%20_214%5D" valuetype="string">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E%E6%97%B6%E7%9A%84%E7%A2%B0%E6%92%9E%E6%95%B0%E6%8D%AE</description>
+                </p>
+              </properties>
+              <customproperties>
+                <p key="sex" value="%22%E5%B0%91%E5%A5%B3%22" valuetype="string"/>
+              </customproperties>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+            <object type="AISprite" uiname="malebg" layer="0">
+              <properties>
+                <p key="name" value="malebg" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="89" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="114.55" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="240" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="173" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="59.4432724816628" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="url" value="resource%2FuserAsset%2Fxunjintupian%2Fbg.png" valuetype="string">
+                  <description>%E5%9B%BE%E7%89%87%E6%BA%90</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E%E6%A3%80%E6%B5%8B</description>
+                </p>
+                <p key="collisionData" value="%5Bobject%20_214%5D" valuetype="string">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E%E6%97%B6%E7%9A%84%E7%A2%B0%E6%92%9E%E6%95%B0%E6%8D%AE</description>
+                </p>
+              </properties>
+              <customproperties/>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+            <object type="AITextField" uiname="sex" layer="0">
+              <properties>
+                <p key="name" value="sex" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="86" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="104.32554810685042" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="178.0912199371295" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="196.55585829905297" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="text" value="%E9%80%89%E6%8B%A9%E4%BD%A0%E7%9A%84%E6%80%A7%E5%88%AB" valuetype="string">
+                  <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
+                </p>
+                <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
+                  <description>%E5%AD%97%E4%BD%93</description>
+                </p>
+                <p key="size" value="30" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F</description>
+                </p>
+                <p key="textColor" value="16777215" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2</description>
+                </p>
+                <p key="bold" value="false" valuetype="boolean">
+                  <description>%E7%B2%97%E4%BD%93</description>
+                </p>
+                <p key="enableInput" value="false" valuetype="boolean">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="inputType" value="text" valuetype="string">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="textAlign" value="center" valuetype="string">
+                  <description>%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="verticalAlign" value="middle" valuetype="string">
+                  <description>%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="maxChars" value="100" valuetype="number">
+                  <description>%E5%AD%97%E6%95%B0%E4%B8%8A%E9%99%90</description>
+                </p>
+                <p key="italic" value="false" valuetype="boolean">
+                  <description>%E6%96%9C%E4%BD%93</description>
+                </p>
+                <p key="wordWrap" value="false" valuetype="boolean">
+                  <description>%E6%94%AF%E6%8C%81%E6%8D%A2%E8%A1%8C</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E</description>
+                </p>
+              </properties>
+              <customproperties/>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+            <object type="AITextField" uiname="picksex" layer="0">
+              <properties>
+                <p key="name" value="picksex" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="84" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="146.63683950047957" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="120" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="263.3631604995204" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="text" value="%E6%97%A0%E5%90%8D%E5%B0%91%E5%A5%B3" valuetype="string">
+                  <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
+                </p>
+                <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
+                  <description>%E5%AD%97%E4%BD%93</description>
+                </p>
+                <p key="size" value="30" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F</description>
+                </p>
+                <p key="textColor" value="16777215" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2</description>
+                </p>
+                <p key="bold" value="false" valuetype="boolean">
+                  <description>%E7%B2%97%E4%BD%93</description>
+                </p>
+                <p key="enableInput" value="false" valuetype="boolean">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="inputType" value="text" valuetype="string">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="textAlign" value="left" valuetype="string">
+                  <description>%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="verticalAlign" value="middle" valuetype="string">
+                  <description>%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="maxChars" value="100" valuetype="number">
+                  <description>%E5%AD%97%E6%95%B0%E4%B8%8A%E9%99%90</description>
+                </p>
+                <p key="italic" value="false" valuetype="boolean">
+                  <description>%E6%96%9C%E4%BD%93</description>
+                </p>
+                <p key="wordWrap" value="false" valuetype="boolean">
+                  <description>%E6%94%AF%E6%8C%81%E6%8D%A2%E8%A1%8C</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E</description>
+                </p>
+              </properties>
+              <customproperties/>
+              <behaviors/>
+              <children/>
+            </object>
+            <object type="AITextField" uiname="txt3" layer="0">
+              <properties>
+                <p key="name" value="txt3" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="82" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="10" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="120" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="130.2257511143035" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="text" value="%E6%9C%89%E4%B8%80%E4%BD%8D" valuetype="string">
+                  <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
+                </p>
+                <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
+                  <description>%E5%AD%97%E4%BD%93</description>
+                </p>
+                <p key="size" value="30" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F</description>
+                </p>
+                <p key="textColor" value="16777215" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2</description>
+                </p>
+                <p key="bold" value="false" valuetype="boolean">
+                  <description>%E7%B2%97%E4%BD%93</description>
+                </p>
+                <p key="enableInput" value="false" valuetype="boolean">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="inputType" value="text" valuetype="string">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="textAlign" value="right" valuetype="string">
+                  <description>%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="verticalAlign" value="middle" valuetype="string">
+                  <description>%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="maxChars" value="100" valuetype="number">
+                  <description>%E5%AD%97%E6%95%B0%E4%B8%8A%E9%99%90</description>
+                </p>
+                <p key="italic" value="false" valuetype="boolean">
+                  <description>%E6%96%9C%E4%BD%93</description>
+                </p>
+                <p key="wordWrap" value="false" valuetype="boolean">
+                  <description>%E6%94%AF%E6%8C%81%E6%8D%A2%E8%A1%8C</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E</description>
+                </p>
+              </properties>
+              <customproperties/>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+            <object type="AITextField" uiname="txt2" layer="0">
+              <properties>
+                <p key="name" value="txt2" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="80" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="400" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="text" value="%E4%B8%80%E4%B8%AA%E5%AE%81%E9%9D%99%E7%9A%84%E5%B0%8F%E9%95%87%EF%BC%8C" valuetype="string">
+                  <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
+                </p>
+                <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
+                  <description>%E5%AD%97%E4%BD%93</description>
+                </p>
+                <p key="size" value="30" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F</description>
+                </p>
+                <p key="textColor" value="16777215" valuetype="number">
+                  <description>%E5%AD%97%E4%BD%93%E9%A2%9C%E8%89%B2</description>
+                </p>
+                <p key="bold" value="false" valuetype="boolean">
+                  <description>%E7%B2%97%E4%BD%93</description>
+                </p>
+                <p key="enableInput" value="false" valuetype="boolean">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="inputType" value="text" valuetype="string">
+                  <description>%E5%85%81%E8%AE%B8%E8%BE%93%E5%85%A5</description>
+                </p>
+                <p key="textAlign" value="center" valuetype="string">
+                  <description>%E6%B0%B4%E5%B9%B3%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="verticalAlign" value="middle" valuetype="string">
+                  <description>%E5%9E%82%E7%9B%B4%E5%B8%83%E5%B1%80</description>
+                </p>
+                <p key="maxChars" value="100" valuetype="number">
+                  <description>%E5%AD%97%E6%95%B0%E4%B8%8A%E9%99%90</description>
+                </p>
+                <p key="italic" value="false" valuetype="boolean">
+                  <description>%E6%96%9C%E4%BD%93</description>
+                </p>
+                <p key="wordWrap" value="false" valuetype="boolean">
+                  <description>%E6%94%AF%E6%8C%81%E6%8D%A2%E8%A1%8C</description>
+                </p>
+                <p key="enabled" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E9%BB%98%E8%AE%A4%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E8%A7%A6%E6%91%B8</description>
+                </p>
+                <p key="collision" value="false" valuetype="boolean">
+                  <description>%E5%8F%82%E4%B8%8E%E7%A2%B0%E6%92%9E</description>
+                </p>
+              </properties>
+              <customproperties/>
+              <behaviors>
+                <b name="淡入淡出" type="FadeBehavior">
+                  <properties>
+                    <p key="activeAtStartType" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E5%88%9B%E5%BB%BA%E7%9A%84%E6%97%B6%E5%80%99%E6%98%AF%E5%90%A6%E7%AB%8B%E5%8D%B3%E6%89%A7%E8%A1%8C%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%93%8D%E4%BD%9C%E3%80%82</description>
+                    </p>
+                    <p key="fadeInTime" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E0%25%E5%88%B0100%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%E3%80%82%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="waitTime" value="2" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E5%90%8E%EF%BC%8C%E5%AE%9E%E4%BE%8B%E4%BF%9D%E6%8C%81%E9%80%8F%E6%98%8E%E5%BA%A6100%25%EF%BC%8C%E5%AE%8C%E5%85%A8%E6%98%BE%E7%A4%BA%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="fadeOutTime" value="0" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E9%80%8F%E6%98%8E%E5%BA%A6%E4%BB%8E100%25%E5%88%B00%25%E6%89%80%E9%9C%80%E8%A6%81%E7%9A%84%E6%97%B6%E9%97%B4%E3%80%82%E8%AE%BE%E7%BD%AE%E4%B8%BA0%E8%A1%A8%E7%A4%BA%E8%B7%B3%E8%BF%87%EF%BC%88%E5%8D%95%E4%BD%8D%EF%BC%9A%E7%A7%92%EF%BC%89</description>
+                    </p>
+                    <p key="loopTimes" value="1" valuetype="number">
+                      <description>%E6%B7%A1%E5%85%A5%E6%B7%A1%E5%87%BA%E6%95%88%E6%9E%9C%E5%BE%AA%E7%8E%AF%E6%AC%A1%E6%95%B0</description>
+                    </p>
+                    <p key="destoryType" value="1" valuetype="number">
+                      <description>%E5%AE%9E%E4%BE%8B%E6%B7%A1%E5%87%BA%E5%AE%8C%E6%88%90%E5%90%8E%E6%98%AF%E5%90%A6%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E3%80%82</description>
+                    </p>
+                  </properties>
+                </b>
+              </behaviors>
+              <children/>
+            </object>
+            <object type="AITextField" uiname="txt1" layer="0">
+              <properties>
+                <p key="name" value="txt1" valuetype="string">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%B1%BB%E5%9E%8B%E5%90%8D%E7%A7%B0%EF%BC%8C%E8%BF%99%E4%B9%9F%E5%B0%B1%E6%98%AF%E8%AF%B4%EF%BC%8C%E5%A4%9A%E4%B8%AA%E5%AE%9E%E4%BE%8B%E5%8F%AF%E8%83%BD%E4%BC%9A%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%90%8D%E5%AD%97%EF%BC%8C%E8%80%8C%E5%90%8C%E4%B8%80%E7%B1%BB%E5%9E%8B%E5%AE%9E%E4%BE%8B%E4%BC%9A%E5%85%B7%E5%A4%87%E7%9B%B8%E5%90%8C%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7%E4%B8%8E%E8%A1%8C%E4%B8%BA</description>
+                </p>
+                <p key="uiGuid" value="78" valuetype="string">
+                  <description>%E7%BC%96%E8%BE%91%E5%99%A8%E7%94%9F%E6%88%90%E7%9A%84%E5%94%AF%E4%B8%80id</description>
+                </p>
+                <p key="global" value="false" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E4%B8%BA%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%EF%BC%8C%E5%85%A8%E5%B1%80%E5%AE%9E%E4%BE%8B%E5%9C%A8%E8%B7%A8%E5%9C%BA%E6%99%AF%E5%90%8E%E4%B8%8D%E4%BC%9A%E8%A2%AB%E9%94%80%E6%AF%81%EF%BC%8C%E4%BB%8D%E7%84%B6%E4%BC%9A%E8%A2%AB%E4%BF%9D%E7%95%99%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%85%B6%E6%9C%AC%E8%BA%AB%E5%B8%A6%E7%9A%84%E6%95%B0%E6%8D%AE%E4%B9%9F%E4%BC%9A%E4%BF%9D%E7%95%99</description>
+                </p>
+                <p key="visible" value="true" valuetype="boolean">
+                  <description>%E5%BD%93%E5%89%8D%E6%98%BE%E7%A4%BA%E5%AF%B9%E8%B1%A1%E6%98%AF%E5%90%A6%E5%8F%AF%E8%A7%81</description>
+                </p>
+                <p key="x" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="y" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorX" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E6%B0%B4%E5%B9%B3%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="anchorY" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E9%94%9A%E7%82%B9%E5%9D%90%E6%A0%87</description>
+                </p>
+                <p key="width" value="400" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E5%AE%BD%E5%BA%A6</description>
+                </p>
+                <p key="height" value="60" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%AB%98%E5%BA%A6</description>
+                </p>
+                <p key="angle" value="0" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E8%87%AA%E8%BA%AB%E8%A7%92%E5%BA%A6</description>
+                </p>
+                <p key="alpha" value="1" valuetype="number">
+                  <description>%E5%BD%93%E5%89%8D%E5%AE%9E%E4%BE%8B%E7%9A%84%E9%80%8F%E6%98%8E%E5%BA%A6</description>
+                </p>
+                <p key="text" value="%E6%9F%90%E5%B9%B4%E6%9F%90%E6%97%A5%EF%BC%8C" valuetype="string">
                   <description>%E9%BB%98%E8%AE%A4%E6%96%87%E6%9C%AC</description>
                 </p>
                 <p key="fontFamily" value="%E5%AE%8B%E4%BD%93" valuetype="string">
