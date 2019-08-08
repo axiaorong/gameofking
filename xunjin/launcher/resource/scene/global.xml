@@ -1,34 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <global>
-  <item UID="84" plugin="AITextField" name="picksex" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="3" family="text">
-    <item name="name" value="picksex" valueDataType="string"/>
-    <item name="uiGuid" value="84" valueDataType="string"/>
-    <item name="global" value="true" valueDataType="boolean"/>
-    <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="146.63683950047957" valueDataType="number"/>
-    <item name="y" value="120" valueDataType="number"/>
-    <item name="anchorX" value="0" valueDataType="number"/>
-    <item name="anchorY" value="0" valueDataType="number"/>
-    <item name="width" value="263.3631604995204" valueDataType="number"/>
-    <item name="height" value="60" valueDataType="number"/>
-    <item name="angle" value="0" valueDataType="number"/>
-    <item name="alpha" value="0" valueDataType="number"/>
-    <item name="text" value="%E6%97%A0%E5%90%8D%E5%B0%91%E5%A5%B3" valueDataType="string"/>
-    <item name="fontFamily" value="%E5%AE%8B%E4%BD%93" valueDataType="string"/>
-    <item name="size" value="30" valueDataType="number"/>
-    <item name="textColor" value="16777215" valueDataType="number"/>
-    <item name="bold" value="false" valueDataType="boolean"/>
-    <item name="enableInput" value="false" valueDataType="boolean"/>
-    <item name="inputType" value="text" valueDataType="string"/>
-    <item name="textAlign" value="left" valueDataType="string"/>
-    <item name="verticalAlign" value="middle" valueDataType="string"/>
-    <item name="maxChars" value="100" valueDataType="number"/>
-    <item name="italic" value="false" valueDataType="boolean"/>
-    <item name="wordWrap" value="false" valueDataType="boolean"/>
-    <item name="enabled" value="true" valueDataType="boolean"/>
-    <item name="collision" value="false" valueDataType="boolean"/>
-    <item name="layer" value="0" valueDataType="number"/>
-  </item>
   <item UID="17" plugin="AITextField" name="tel" cacheAsBitmap="false" parallaxX="100" parallaxY="100" index="6" family="text">
     <item name="name" value="tel" valueDataType="string"/>
     <item name="uiGuid" value="17" valueDataType="string"/>

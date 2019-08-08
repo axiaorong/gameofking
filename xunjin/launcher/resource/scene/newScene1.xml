@@ -6,8 +6,8 @@
     <item name="uiGuid" value="41" valueDataType="string"/>
     <item name="global" value="false" valueDataType="boolean"/>
     <item name="visible" value="true" valueDataType="boolean"/>
-    <item name="x" value="-5.006372242884254" valueDataType="number"/>
-    <item name="y" value="1.3545180543340507" valueDataType="number"/>
+    <item name="x" value="1.5073397525395649" valueDataType="number"/>
+    <item name="y" value="0.6029359010158828" valueDataType="number"/>
     <item name="anchorX" value="0" valueDataType="number"/>
     <item name="anchorY" value="0" valueDataType="number"/>
     <item name="width" value="400" valueDataType="number"/>
